@@ -132,8 +132,10 @@
         .monolith-pillar:hover { flex: 2 !important; clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%) !important; z-index: 20; }
         .monolith-pillar:hover .monolith-img { filter: brightness(0.7) saturate(1) contrast(1); transform: scale(1.1); }
         .monolith-pillar:hover .monolith-label { transform: translateX(0); opacity: 1; }
-        .monolith-pillar:hover .monolith-details { max-height: 200px; opacity: 1; margin-top: 20px; }
+        .monolith-pillar:hover .monolith-details { max-height: 400px; opacity: 1; margin-top: 20px; }
         .monolith-pillar:hover .scanner-beam { animation: scan 2s linear infinite; opacity: 1; }
+        .monolith-pillar:hover .monolith-btn { opacity: 1; transform: translateY(0); margin-top: 30px; }
+        .monolith-btn { opacity: 0; transform: translateY(10px); transition: all 0.5s ease 0.2s; }
         @keyframes scan { 0% { top: 0; } 100% { top: 100%; } }
         /* Reset content padding on hover for center alignment */
         .monolith-pillar:hover .monolith-content { padding-left: 5% !important; }
@@ -222,7 +224,7 @@
     <div class="container-fluid p-0 my-5 overflow-hidden">
         <div class="d-flex flex-column flex-lg-row" style="min-height: 750px; background: #000;">
             <!-- Contractor: Engineering Pillar -->
-            <div class="flex-fill position-relative overflow-hidden monolith-pillar group" style="flex: 1; transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1); cursor: pointer; clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%); margin-right: -5%;">
+            <div class="flex-fill position-relative overflow-hidden monolith-pillar group" style="flex: 1; transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1); cursor: pointer; clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%); margin-right: -5%;" onclick="location.href='Audience.html#contractors'">
                 <img class="w-100 h-100 position-absolute top-0 start-0 monolith-img" src="img/img12.png" style="object-fit: cover; filter: brightness(0.4) saturate(0.5) contrast(1.2); transition: all 1s ease;" alt="For Contractors">
                 
                 <!-- Scanner Beam Animation -->
@@ -235,12 +237,17 @@
                     <h2 class="display-4 text-white fw-bold mb-4" style="line-height: 1.1;">THE <span style="color: var(--primary);">BUILDER'S</span><br>PRECISION</h2>
                     <div class="monolith-details" style="max-height: 0; opacity: 0; overflow: hidden; transition: all 0.6s ease;">
                         <p class="text-white-50 fs-5 mb-0" style="max-width: 400px;">Optimized for high-impact structural requirements. Calibrated layers for zero-void performance.</p>
+                        <div class="monolith-btn">
+                            <a href="Audience.html#contractors" class="text-white text-decoration-none fw-bold" style="letter-spacing: 2px; font-size: 0.8rem;">
+                                LEARN MORE <i class="fa fa-arrow-right ms-2 text-primary"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <!-- Dealer: Distribution Pillar -->
-            <div class="flex-fill position-relative overflow-hidden monolith-pillar group" style="flex: 1; transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1); cursor: pointer; clip-path: polygon(15% 0, 100% 0, 85% 100%, 0% 100%); margin-right: -5%;">
+            <div class="flex-fill position-relative overflow-hidden monolith-pillar group" style="flex: 1; transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1); cursor: pointer; clip-path: polygon(15% 0, 100% 0, 85% 100%, 0% 100%); margin-right: -5%;" onclick="location.href='Audience.html#dealers'">
                 <img class="w-100 h-100 position-absolute top-0 start-0 monolith-img" src="img/img13.png" style="object-fit: cover; filter: brightness(0.4) saturate(0.5) contrast(1.2); transition: all 1s ease;" alt="For Dealers">
                 
                 <!-- Scanner Beam Animation -->
@@ -253,12 +260,17 @@
                     <h2 class="display-4 text-white fw-bold mb-4" style="line-height: 1.1;">ELITE <span style="color: var(--primary);">PARTNER</span><br>NETWORK</h2>
                     <div class="monolith-details" style="max-height: 0; opacity: 0; overflow: hidden; transition: all 0.6s ease;">
                         <p class="text-white-50 fs-5 mb-0" style="max-width: 400px;">Exclusive distribution support for luxury architectural suppliers. Global standard assurance.</p>
+                        <div class="monolith-btn">
+                            <a href="Audience.html#dealers" class="text-white text-decoration-none fw-bold" style="letter-spacing: 2px; font-size: 0.8rem;">
+                                LEARN MORE <i class="fa fa-arrow-right ms-2 text-primary"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <!-- Home Owner: Aesthetic Pillar -->
-            <div class="flex-fill position-relative overflow-hidden monolith-pillar group" style="flex: 1; transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1); cursor: pointer; clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);">
+            <div class="flex-fill position-relative overflow-hidden monolith-pillar group" style="flex: 1; transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1); cursor: pointer; clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);" onclick="location.href='Audience.html#homeowners'">
                 <img class="w-100 h-100 position-absolute top-0 start-0 monolith-img" src="img/img16.png" style="object-fit: cover; filter: brightness(0.4) saturate(0.5) contrast(1.2); transition: all 1s ease;" alt="For Home Owners">
                 
                 <!-- Scanner Beam Animation -->
@@ -271,6 +283,11 @@
                     <h2 class="display-4 text-white fw-bold mb-4" style="line-height: 1.1;">TIMELESS <span style="color: var(--primary);">LEGACY</span><br>SURFACES</h2>
                     <div class="monolith-details" style="max-height: 0; opacity: 0; overflow: hidden; transition: all 0.6s ease;">
                         <p class="text-white-50 fs-5 mb-0" style="max-width: 400px;">Engineered for beauty that endures. The final touch for the world's most beautiful homes.</p>
+                        <div class="monolith-btn">
+                            <a href="Audience.html#homeowners" class="text-white text-decoration-none fw-bold" style="letter-spacing: 2px; font-size: 0.8rem;">
+                                LEARN MORE <i class="fa fa-arrow-right ms-2 text-primary"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
