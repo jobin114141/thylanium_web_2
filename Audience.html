@@ -321,32 +321,81 @@
         </div>
     </section>
 
-    <!-- Final Brand Summary -->
-    <div class="container-fluid py-5" style="background-color: var(--slate);">
-        <div class="container py-5 text-center">
-            <div class="row justify-content-center">
-                <div class="col-lg-10 wow fadeInUp" data-wow-delay="0.1s">
-                    <h2 class="display-4 text-white fw-bold mb-5">One Brand. Three Purposes.</h2>
-                    <div class="row g-4 mb-5">
-                        <div class="col-md-4">
-                            <h5 class="text-primary mb-2">Build Professionally</h5>
-                            <div class="bg-white bg-opacity-10 h-1px w-100 mx-auto mb-3"></div>
-                        </div>
-                        <div class="col-md-4">
-                            <h5 class="text-primary mb-2">Grow Businesses</h5>
-                            <div class="bg-white bg-opacity-10 h-1px w-100 mx-auto mb-3"></div>
-                        </div>
-                        <div class="col-md-4">
-                            <h5 class="text-primary mb-2">Create Homes</h5>
-                            <div class="bg-white bg-opacity-10 h-1px w-100 mx-auto mb-3"></div>
-                        </div>
-                    </div>
-                    <h1 class="text-white fw-bold mb-0" style="font-size: 4.5rem; letter-spacing: -3px;">THY<span style="color: var(--primary);">LANIUM</span></h1>
-                    <p class="text-primary text-uppercase fw-bold ls-5" style="letter-spacing: 15px; font-size: 1.2rem;">The Teak of Plywood</p>
+    <!-- Modern Architectural Signature -->
+    <div class="container-fluid py-5 overflow-hidden" style="background: #050505; position: relative;">
+        <!-- Kinetic Grid Background -->
+        <div class="position-absolute top-0 start-0 w-100 h-100 opacity-05" style="background-image: linear-gradient(#B9823C 1px, transparent 1px), linear-gradient(90deg, #B9823C 1px, transparent 1px); background-size: 100px 100px;"></div>
+
+        <div class="container py-5 position-relative" style="z-index: 5;">
+            <div class="row align-items-end mb-5 pb-4">
+                <div class="col-lg-8 wow fadeInLeft" data-wow-delay="0.1s">
+                    <h2 class="display-1 fw-black text-white mb-0" style="letter-spacing: -4px; line-height: 0.85; opacity: 0.1; position: absolute; top: -40px; left: -10px;">PURPOSE</h2>
+                    <h2 class="display-3 text-white fw-bold mb-0">One Brand. <br><span class="text-outline">THREE VISIONS.</span></h2>
                 </div>
+            </div>
+
+            <div class="row g-0 border-top border-white border-opacity-10">
+                <!-- Build Block -->
+                <div class="col-lg-4 col-md-6 border-end border-white border-opacity-10 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="modern-purpose-block p-5 h-100">
+                        <span class="text-primary fw-bold mb-4 d-block" style="letter-spacing: 5px; font-size: 0.7rem;">01 / CONSTRUCTION</span>
+                        <h4 class="text-white fw-bold mb-4">Build<br>Professionally</h4>
+                        <div class="block-indicator" style="width: 0; height: 2px; background: var(--primary); transition: width 0.4s ease;"></div>
+                    </div>
+                </div>
+                <!-- Grow Block -->
+                <div class="col-lg-4 col-md-6 border-end border-white border-opacity-10 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="modern-purpose-block p-5 h-100">
+                        <span class="text-primary fw-bold mb-4 d-block" style="letter-spacing: 5px; font-size: 0.7rem;">02 / PARTNERSHIP</span>
+                        <h4 class="text-white fw-bold mb-4">Grow<br>Businesses</h4>
+                        <div class="block-indicator" style="width: 0; height: 2px; background: var(--primary); transition: width 0.4s ease;"></div>
+                    </div>
+                </div>
+                <!-- Create Block -->
+                <div class="col-lg-4 col-md-12 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="modern-purpose-block p-5 h-100">
+                        <span class="text-primary fw-bold mb-4 d-block" style="letter-spacing: 5px; font-size: 0.7rem;">03 / LIFESTYLE</span>
+                        <h4 class="text-white fw-bold mb-4">Create<br>Homes</h4>
+                        <div class="block-indicator" style="width: 0; height: 2px; background: var(--primary); transition: width 0.4s ease;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5 pt-5 wow fadeInUp" data-wow-delay="0.8s">
+                <h1 class="modern-signature mb-0">THY<span class="text-primary">LANIUM</span></h1>
+                <p class="modern-tagline mt-2">THE TEAK OF PLYWOOD</p>
             </div>
         </div>
     </div>
+    <style>
+        .text-outline {
+            color: transparent;
+            -webkit-text-stroke: 1px rgba(255,255,255,0.3);
+        }
+        .modern-purpose-block { cursor: pointer; transition: background 0.4s ease; }
+        .modern-purpose-block:hover { background: rgba(185,130,60,0.05); }
+        .modern-purpose-block:hover .block-indicator { width: 100%; }
+        
+        .modern-signature {
+            font-size: 7rem;
+            font-weight: 900;
+            color: #fff;
+            letter-spacing: -5px;
+            line-height: 1;
+            text-transform: uppercase;
+        }
+        .modern-tagline {
+            color: var(--primary);
+            letter-spacing: 15px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            opacity: 0.8;
+        }
+        @media (max-width: 991px) {
+            .modern-signature { font-size: 4rem; letter-spacing: -2px; }
+            .modern-tagline { letter-spacing: 8px; font-size: 0.8rem; }
+        }
+    </style>
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-light footer pt-5 wow fadeIn" data-wow-delay="0.1s">
