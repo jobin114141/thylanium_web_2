@@ -254,12 +254,41 @@
 }
 
 .page-header {
-    background: linear-gradient(rgba(53, 53, 53, .7), rgba(53, 53, 53, .7)), url(../img/carousel-1.jpg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/carousel-1.jpg) center center no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 6rem;
+}
+
+.page-header h1 {
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.breadcrumb {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    display: inline-flex;
+    padding: 10px 25px;
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .breadcrumb-item + .breadcrumb-item::before {
-    color: var(--light);
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumb-item a {
+    transition: color 0.3s ease;
+}
+
+.breadcrumb-item a:hover {
+    color: var(--primary) !important;
 }
 
 
