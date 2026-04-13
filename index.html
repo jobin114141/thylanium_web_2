@@ -136,6 +136,26 @@
         .monolith-pillar:hover .scanner-beam { animation: scan 2s linear infinite; opacity: 1; }
         .monolith-pillar:hover .monolith-btn { opacity: 1; transform: translateY(0); margin-top: 30px; }
         .monolith-btn { opacity: 0; transform: translateY(10px); transition: all 0.5s ease 0.2s; }
+        
+        .nav-hint {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.8);
+            background: var(--primary);
+            color: #fff;
+            padding: 8px 18px;
+            border-radius: 999px;
+            font-size: 0.65rem;
+            font-weight: 800;
+            letter-spacing: 2px;
+            opacity: 0;
+            transition: all 0.4s ease;
+            z-index: 15;
+            white-space: nowrap;
+        }
+        .monolith-pillar:hover .nav-hint { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+        
         @keyframes scan { 0% { top: 0; } 100% { top: 100%; } }
         /* Reset content padding on hover for center alignment */
         .monolith-pillar:hover .monolith-content { padding-left: 5% !important; }
@@ -230,6 +250,9 @@
                 <!-- Scanner Beam Animation -->
                 <div class="position-absolute top-0 start-0 w-100 scanner-beam" style="height: 2px; background: linear-gradient(to right, transparent, var(--primary), transparent); z-index: 5; opacity: 0;"></div>
 
+                <!-- Navigation Hint -->
+                <div class="nav-hint">EXPLORE FULL STORY</div>
+
                 <div class="position-absolute bottom-0 start-0 w-100 p-5 monolith-content" style="z-index: 10;">
                     <div class="monolith-label mb-3" style="transform: translateX(-20px); opacity: 0; transition: all 0.5s ease;">
                         <span class="badge border border-primary text-primary px-3 py-1 text-uppercase" style="letter-spacing: 3px; font-size: 0.7rem;">Grade: Marine-X</span>
@@ -238,8 +261,8 @@
                     <div class="monolith-details" style="max-height: 0; opacity: 0; overflow: hidden; transition: all 0.6s ease;">
                         <p class="text-white-50 fs-5 mb-0" style="max-width: 400px;">Optimized for high-impact structural requirements. Calibrated layers for zero-void performance.</p>
                         <div class="monolith-btn">
-                            <a href="Audience.html#contractors" class="text-white text-decoration-none fw-bold" style="letter-spacing: 2px; font-size: 0.8rem;">
-                                LEARN MORE <i class="fa fa-arrow-right ms-2 text-primary"></i>
+                            <a href="Audience.html#contractors" class="btn btn-primary btn-sm rounded-pill px-4" style="letter-spacing: 1px; font-size: 0.75rem; font-weight: 700;">
+                                VIEW DETAILS <i class="fa fa-arrow-right ms-2"></i>
                             </a>
                         </div>
                     </div>
@@ -253,6 +276,9 @@
                 <!-- Scanner Beam Animation -->
                 <div class="position-absolute top-0 start-0 w-100 scanner-beam" style="height: 2px; background: linear-gradient(to right, transparent, var(--primary), transparent); z-index: 5; opacity: 0;"></div>
 
+                <!-- Navigation Hint -->
+                <div class="nav-hint">EXPLORE FULL STORY</div>
+
                 <div class="position-absolute bottom-0 start-0 w-100 p-5 monolith-content" style="z-index: 10; padding-left: 15% !important;">
                     <div class="monolith-label mb-3" style="transform: translateX(-20px); opacity: 0; transition: all 0.5s ease;">
                         <span class="badge border border-primary text-primary px-3 py-1 text-uppercase" style="letter-spacing: 3px; font-size: 0.7rem;">Market: Elite</span>
@@ -261,8 +287,8 @@
                     <div class="monolith-details" style="max-height: 0; opacity: 0; overflow: hidden; transition: all 0.6s ease;">
                         <p class="text-white-50 fs-5 mb-0" style="max-width: 400px;">Exclusive distribution support for luxury architectural suppliers. Global standard assurance.</p>
                         <div class="monolith-btn">
-                            <a href="Audience.html#dealers" class="text-white text-decoration-none fw-bold" style="letter-spacing: 2px; font-size: 0.8rem;">
-                                LEARN MORE <i class="fa fa-arrow-right ms-2 text-primary"></i>
+                            <a href="Audience.html#dealers" class="btn btn-primary btn-sm rounded-pill px-4" style="letter-spacing: 1px; font-size: 0.75rem; font-weight: 700;">
+                                VIEW DETAILS <i class="fa fa-arrow-right ms-2"></i>
                             </a>
                         </div>
                     </div>
@@ -276,6 +302,9 @@
                 <!-- Scanner Beam Animation -->
                 <div class="position-absolute top-0 start-0 w-100 scanner-beam" style="height: 2px; background: linear-gradient(to right, transparent, var(--primary), transparent); z-index: 5; opacity: 0;"></div>
 
+                <!-- Navigation Hint -->
+                <div class="nav-hint">EXPLORE FULL STORY</div>
+
                 <div class="position-absolute bottom-0 start-0 w-100 p-5 monolith-content" style="z-index: 10; padding-left: 15% !important;">
                     <div class="monolith-label mb-3" style="transform: translateX(-20px); opacity: 0; transition: all 0.5s ease;">
                         <span class="badge border border-primary text-primary px-3 py-1 text-uppercase" style="letter-spacing: 3px; font-size: 0.7rem;">Class: Luxury</span>
@@ -284,8 +313,8 @@
                     <div class="monolith-details" style="max-height: 0; opacity: 0; overflow: hidden; transition: all 0.6s ease;">
                         <p class="text-white-50 fs-5 mb-0" style="max-width: 400px;">Engineered for beauty that endures. The final touch for the world's most beautiful homes.</p>
                         <div class="monolith-btn">
-                            <a href="Audience.html#homeowners" class="text-white text-decoration-none fw-bold" style="letter-spacing: 2px; font-size: 0.8rem;">
-                                LEARN MORE <i class="fa fa-arrow-right ms-2 text-primary"></i>
+                            <a href="Audience.html#homeowners" class="btn btn-primary btn-sm rounded-pill px-4" style="letter-spacing: 1px; font-size: 0.75rem; font-weight: 700;">
+                                VIEW DETAILS <i class="fa fa-arrow-right ms-2"></i>
                             </a>
                         </div>
                     </div>
