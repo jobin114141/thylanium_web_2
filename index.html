@@ -71,59 +71,193 @@
     <!-- Navbar End -->
 
 
-    <!-- Hero Section: Centered Majesty -->
-    <div class="container-fluid p-0 position-relative overflow-hidden" style="height: 100vh; background: #000;">
-        <!-- Background Image with Cinematic Filter -->
+    <!-- Hero Section: Cinematic Architectural Majesty -->
+    <div class="container-fluid p-0 position-relative overflow-hidden hero-blueprint" style="height: 100vh; background: #000;">
+        <!-- Background Image with Ken Burns Effect -->
         <div class="position-absolute top-0 start-0 w-100 h-100">
-            <img class="w-100 h-100" src="img/img10.jpg" alt="Thylanium Heritage" 
-                style="object-fit: cover; filter: brightness(0.4) contrast(1.1); transform: scale(1.1); transition: transform 12s ease;">
+            <img class="w-100 h-100 ken-burns" src="img/img10.jpg" alt="Thylanium Heritage" 
+                style="object-fit: cover; filter: brightness(0.35) contrast(1.1) saturate(0.8);">
         </div>
 
+        <!-- Architectural Grid Overlay -->
+        <div class="position-absolute top-0 start-0 w-100 h-100 blueprint-grid" style="opacity: 0.15; z-index: 1;"></div>
+        
+     
         <!-- Central Radial Highlight (Blueprint Hub) -->
         <div class="position-absolute top-50 start-50 translate-middle w-100 h-100 d-none d-lg-block" 
-            style="background: radial-gradient(circle at center, rgba(185,130,60,0.15) 0%, transparent 70%); z-index: 1;"></div>
+            style="background: radial-gradient(circle at center, rgba(185,130,60,0.2) 0%, transparent 70%); z-index: 1;"></div>
 
-        <div class="container h-100 position-relative" style="z-index: 2;">
+        <div class="container h-100 position-relative" style="z-index: 10;">
             <div class="row h-100 align-items-center justify-content-center">
-                <div class="col-lg-10 text-center wow fadeInUp" data-wow-delay="0.2s">
+                <div class="col-lg-10 text-center">
                     <!-- Top Marker -->
-                    <div class="d-inline-flex align-items-center justify-content-center mb-4">
-                        <div class="bg-primary" style="width: 40px; height: 1px;"></div>
-                        <span class="text-white text-uppercase fw-bold mx-3" style="letter-spacing: 12px; font-size: 0.75rem;">Premium Craftsmanship</span>
-                        <div class="bg-primary" style="width: 40px; height: 1px;"></div>
+                    <div class="d-inline-flex align-items-center justify-content-center mb-4 wow fadeInDown" data-wow-delay="0.2s">
+                        <div class="hero-line bg-primary d-none d-sm-block"></div>
+                        <span class="text-white text-uppercase fw-bold mx-3 hero-marker-text" style="letter-spacing: 15px; font-size: 0.7rem;">Architectural Grade</span>
+                        <div class="hero-line bg-primary d-none d-sm-block"></div>
                     </div>
 
-                    <!-- Brand Identity -->
-                    <h1 class="display-1 text-white fw-bold mb-3" style="letter-spacing: 5px; text-shadow: 0 10px 30px rgba(0,0,0,0.5);">THY<span style="color: var(--primary);">LANIUM</span></h1>
+                    <!-- Brand Identity with Kinetic Typography -->
+                    <div class="overflow-hidden mb-2">
+                        <h1 class="display-1 text-white fw-bold mb-0 main-title wow slideInUp hero-main-title" data-wow-delay="0.4s" style="letter-spacing: 15px; text-shadow: 0 15px 40px rgba(0,0,0,0.8);">THY<span class="text-primary-gradient">LANIUM</span></h1>
+                    </div>
                     
-                    <!-- Slogan with Gold Bar -->
-                    <div class="d-inline-block position-relative mb-5">
-                        <p class="text-white-50 fs-3 mb-0" style="letter-spacing: 8px; font-weight: 300; text-transform: uppercase;">The Teak of Plywood</p>
-                        <div class="position-absolute start-0 bottom-0 w-100 bg-primary" style="height: 2px; transform: translateY(15px);"></div>
+                    <!-- Slogan with Animated Bar -->
+                    <div class="d-inline-block position-relative mb-5 wow fadeIn" data-wow-delay="0.8s">
+                        <p class="text-white-50 fs-3 mb-0 fw-light" style="letter-spacing: 10px; text-transform: uppercase;">The Teak of Plywood</p>
+                        <div class="slogan-bar"></div>
                     </div>
 
                     <!-- Hero Paragraph (Centered) -->
-                    <div class="row justify-content-center">
+                    <div class="row justify-content-center wow fadeIn" data-wow-delay="1s">
                         <div class="col-lg-8">
-                            <p class="text-white opacity-75 fs-5 mb-5 px-lg-5" style="line-height: 1.8;">Engineered for those who demand excellence. Our plywood merges advanced structural integrity with the timeless aesthetics of fine wood craftsmanship.</p>
+                            <p class="text-white opacity-75 fs-5 mb-5 px-lg-5" style="line-height: 2; font-weight: 300;">Engineered for those who demand excellence. Our plywood merges advanced structural integrity with the timeless aesthetics of fine wood craftsmanship.</p>
                         </div>
                     </div>
 
-                    <!-- Call to Action -->
-                    <div class="d-flex align-items-center justify-content-center">
-                        <a href="service.html" class="btn btn-primary btn-lg rounded-pill px-5 py-3 me-3 shadow-lg fw-bold" style="letter-spacing: 1px;">OUR PRODUCTS</a>
-                        <a href="contact.html" class="btn btn-outline-light btn-lg rounded-pill px-5 py-3 shadow-lg fw-bold" style="letter-spacing: 1px; border-width: 2px;">GET A QUOTE</a>
+                    <!-- Call to Action: Architecture-Bridged Buttons -->
+                    <div class="d-flex align-items-center justify-content-center wow fadeInUp" data-wow-delay="1.2s">
+                        <a href="contact.html" class="btn hero-cta-btn btn-white-glass rounded-pill px-5 py-3 fw-bold">GET A QUOTE</a>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Scroll Indicator -->
-        <div class="position-absolute bottom-0 start-50 translate-middle-x mb-5 d-none d-md-block" style="z-index: 3;">
-            <div style="width: 2px; height: 50px; background: linear-gradient(var(--primary), transparent); margin: 0 auto;"></div>
+        <!-- Refined Scroll Indicator -->
+        <div class="position-absolute bottom-0 start-50 translate-middle-x mb-5 d-none d-md-block" style="z-index: 10;">
+            <div class="mouse-scroll">
+                <div class="dot"></div>
+            </div>
+            <span class="text-white-50 text-uppercase mt-2 d-block" style="font-size: 0.6rem; letter-spacing: 3px; font-weight: 700;">Scroll</span>
         </div>
     </div>
     <!-- Hero End -->
+
+    <style>
+        .blueprint-grid {
+            background-image: 
+                linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+            background-size: 50px 50px;
+        }
+        .ken-burns { animation: kenburns 20s infinite alternate; }
+        @keyframes kenburns { from { transform: scale(1.1); } to { transform: scale(1.2) translate(-2%, -2%); } }
+        
+        .hero-line { width: 60px; height: 1px; }
+        .text-primary-gradient { 
+            background: linear-gradient(to bottom, var(--primary) 0%, #D4A76A 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Ultra-Premium Glass Buttons */
+        .hero-cta-btn {
+            position: relative;
+            padding: 1.2rem 3rem;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            font-weight: 800;
+            border-radius: 999px;
+            overflow: hidden;
+            transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+            backdrop-filter: blur(15px);
+            z-index: 10;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        /* Ambient Glint Animation */
+        .hero-cta-btn::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(to right, transparent, rgba(255,255,255,0.3), transparent);
+            transform: skewX(-25deg);
+            transition: 0s;
+        }
+        .hero-cta-btn:hover::after {
+            left: 150%;
+            transition: 0.8s;
+        }
+
+        .btn-primary-glass {
+            background: rgba(185, 130, 60, 0.2);
+            border-color: rgba(185, 130, 60, 0.5) !important;
+            color: var(--primary);
+        }
+        .btn-primary-glass:hover {
+            background: var(--primary);
+            color: #000;
+            box-shadow: 0 0 30px rgba(185, 130, 60, 0.4);
+        }
+
+        .btn-white-glass {
+            background: rgba(255, 255, 255, 0.05);
+            color: #fff;
+        }
+        .btn-white-glass:hover {
+            background: #fff;
+            color: #000;
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+        }
+        
+        .hero-cta-btn:hover {
+            transform: scale(1.05) translateY(-5px);
+        }
+        
+        .slogan-bar {
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+            height: 2px;
+            background: var(--primary);
+            box-shadow: 0 0 15px var(--primary);
+        }
+        .hover-lift { transition: all 0.3s ease; }
+        .hover-lift:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.3) !important; }
+        .glass-button:hover { background: rgba(255,255,255,0.1); backdrop-filter: blur(5px); }
+        
+        .mouse-scroll {
+            width: 26px;
+            height: 42px;
+            border: 2px solid rgba(255,255,255,0.3);
+            border-radius: 20px;
+            margin: 0 auto;
+            position: relative;
+        }
+        .mouse-scroll .dot {
+            width: 4px;
+            height: 4px;
+            background: var(--primary);
+            border-radius: 50%;
+            position: absolute;
+            left: 50%;
+            top: 10px;
+            transform: translateX(-50%);
+            animation: scrollMove 2s infinite;
+        }
+        @keyframes scrollMove {
+            0% { top: 10px; opacity: 1; }
+            100% { top: 25px; opacity: 0; }
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .hero-marker-text { letter-spacing: 5px !important; font-size: 0.6rem !important; }
+            .hero-main-title { letter-spacing: 5px !important; font-size: 3rem !important; }
+            .main-title { font-size: 3.5rem !important; }
+        }
+    </style>
     <!-- Brand Intro Start -->
     <div class="container-fluid bg-light p-0">
         <div class="container py-3">
