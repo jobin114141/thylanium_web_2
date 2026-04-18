@@ -72,52 +72,48 @@
 
 
     <!-- Hero Section: Cinematic Architectural Majesty -->
-    <div class="container-fluid p-0 position-relative overflow-hidden hero-blueprint" style="height: 100vh; background: #000;">
+    <div class="container-fluid p-0 position-relative overflow-hidden hero-blueprint"
+        style="height: 100vh; background: #000;">
         <!-- Background Image with Ken Burns Effect -->
         <div class="position-absolute top-0 start-0 w-100 h-100">
-            <img class="w-100 h-100 ken-burns" src="img/img10.jpg" alt="Thylanium Heritage" 
+            <img class="w-100 h-100 ken-burns" src="img/img10.jpg" alt="Thylanium Heritage"
                 style="object-fit: cover; filter: brightness(0.35) contrast(1.1) saturate(0.8);">
         </div>
 
         <!-- Architectural Grid Overlay -->
-        <div class="position-absolute top-0 start-0 w-100 h-100 blueprint-grid" style="opacity: 0.15; z-index: 1;"></div>
-        
-     
+        <div class="position-absolute top-0 start-0 w-100 h-100 blueprint-grid" style="opacity: 0.15; z-index: 1;">
+        </div>
+
+
         <!-- Central Radial Highlight (Blueprint Hub) -->
-        <div class="position-absolute top-50 start-50 translate-middle w-100 h-100 d-none d-lg-block" 
-            style="background: radial-gradient(circle at center, rgba(185,130,60,0.2) 0%, transparent 70%); z-index: 1;"></div>
+        <div class="position-absolute top-50 start-50 translate-middle w-100 h-100 d-none d-lg-block"
+            style="background: radial-gradient(circle at center, rgba(185,130,60,0.2) 0%, transparent 70%); z-index: 1;">
+        </div>
 
         <div class="container h-100 position-relative" style="z-index: 10;">
             <div class="row h-100 align-items-center justify-content-center">
                 <div class="col-lg-10 text-center">
-                    <!-- Top Marker -->
-                    <div class="d-inline-flex align-items-center justify-content-center mb-4 wow fadeInDown" data-wow-delay="0.2s">
-                        <div class="hero-line bg-primary d-none d-sm-block"></div>
-                        <span class="text-white text-uppercase fw-bold mx-3 hero-marker-text" style="letter-spacing: 15px; font-size: 0.7rem;">Architectural Grade</span>
-                        <div class="hero-line bg-primary d-none d-sm-block"></div>
-                    </div>
-
-                    <!-- Brand Identity with Kinetic Typography -->
-                    <div class="overflow-hidden mb-2">
-                        <h1 class="display-1 text-white fw-bold mb-0 main-title wow slideInUp hero-main-title" data-wow-delay="0.4s" style="letter-spacing: 15px; text-shadow: 0 15px 40px rgba(0,0,0,0.8);">THY<span class="text-primary-gradient">LANIUM</span></h1>
-                    </div>
-                    
                     <!-- Slogan with Animated Bar -->
                     <div class="d-inline-block position-relative mb-5 wow fadeIn" data-wow-delay="0.8s">
-                        <p class="text-white-50 fs-3 mb-0 fw-light" style="letter-spacing: 10px; text-transform: uppercase;">The Teak of Plywood</p>
+                        <h1 class="text-white fs-1 mb-0 fw-bold hero-main-title"
+                            style="letter-spacing: 8px; text-transform: uppercase;">LAYERED WITH LEGACY</h1>
                         <div class="slogan-bar"></div>
                     </div>
 
                     <!-- Hero Paragraph (Centered) -->
                     <div class="row justify-content-center wow fadeIn" data-wow-delay="1s">
                         <div class="col-lg-8">
-                            <p class="text-white opacity-75 fs-5 mb-5 px-lg-5" style="line-height: 2; font-weight: 300;">Engineered for those who demand excellence. Our plywood merges advanced structural integrity with the timeless aesthetics of fine wood craftsmanship.</p>
+                            <p class="text-primary fs-5 mb-5 px-lg-5 hero-paragraph-mobile"
+                                style="line-height: 2; font-weight: 300;">Engineered for those who demand excellence.
+                                Our plywood merges advanced structural integrity with the timeless aesthetics of fine
+                                wood craftsmanship.</p>
                         </div>
                     </div>
 
                     <!-- Call to Action: Architecture-Bridged Buttons -->
                     <div class="d-flex align-items-center justify-content-center wow fadeInUp" data-wow-delay="1.2s">
-                        <a href="contact.html" class="btn hero-cta-btn btn-white-glass rounded-pill px-5 py-3 fw-bold">GET A QUOTE</a>
+                        <a href="contact.html"
+                            class="btn hero-cta-btn btn-white-glass rounded-pill px-5 py-3 fw-bold">GET A QUOTE</a>
                     </div>
                 </div>
             </div>
@@ -128,23 +124,40 @@
             <div class="mouse-scroll">
                 <div class="dot"></div>
             </div>
-            <span class="text-white-50 text-uppercase mt-2 d-block" style="font-size: 0.6rem; letter-spacing: 3px; font-weight: 700;">Scroll</span>
+            <span class="text-white-50 text-uppercase mt-2 d-block"
+                style="font-size: 0.6rem; letter-spacing: 3px; font-weight: 700;">Scroll</span>
         </div>
     </div>
     <!-- Hero End -->
 
     <style>
         .blueprint-grid {
-            background-image: 
+            background-image:
                 linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
                 linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
             background-size: 50px 50px;
         }
-        .ken-burns { animation: kenburns 20s infinite alternate; }
-        @keyframes kenburns { from { transform: scale(1.1); } to { transform: scale(1.2) translate(-2%, -2%); } }
-        
-        .hero-line { width: 60px; height: 1px; }
-        .text-primary-gradient { 
+
+        .ken-burns {
+            animation: kenburns 20s infinite alternate;
+        }
+
+        @keyframes kenburns {
+            from {
+                transform: scale(1.1);
+            }
+
+            to {
+                transform: scale(1.2) translate(-2%, -2%);
+            }
+        }
+
+        .hero-line {
+            width: 60px;
+            height: 1px;
+        }
+
+        .text-primary-gradient {
             background: linear-gradient(to bottom, var(--primary) 0%, #D4A76A 100%);
             -webkit-background-clip: text;
             background-clip: text;
@@ -168,7 +181,7 @@
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            border: 1px solid rgba(255,255,255,0.2);
+            border: 1px solid rgba(255, 255, 255, 0.2);
         }
 
         /* Ambient Glint Animation */
@@ -179,10 +192,11 @@
             left: -100%;
             width: 50%;
             height: 100%;
-            background: linear-gradient(to right, transparent, rgba(255,255,255,0.3), transparent);
+            background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.3), transparent);
             transform: skewX(-25deg);
             transition: 0s;
         }
+
         .hero-cta-btn:hover::after {
             left: 150%;
             transition: 0.8s;
@@ -193,6 +207,7 @@
             border-color: rgba(185, 130, 60, 0.5) !important;
             color: var(--primary);
         }
+
         .btn-primary-glass:hover {
             background: var(--primary);
             color: #000;
@@ -203,16 +218,17 @@
             background: rgba(255, 255, 255, 0.05);
             color: #fff;
         }
+
         .btn-white-glass:hover {
             background: #fff;
             color: #000;
             box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
         }
-        
+
         .hero-cta-btn:hover {
             transform: scale(1.05) translateY(-5px);
         }
-        
+
         .slogan-bar {
             position: absolute;
             bottom: -15px;
@@ -223,18 +239,30 @@
             background: var(--primary);
             box-shadow: 0 0 15px var(--primary);
         }
-        .hover-lift { transition: all 0.3s ease; }
-        .hover-lift:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.3) !important; }
-        .glass-button:hover { background: rgba(255,255,255,0.1); backdrop-filter: blur(5px); }
-        
+
+        .hover-lift {
+            transition: all 0.3s ease;
+        }
+
+        .hover-lift:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3) !important;
+        }
+
+        .glass-button:hover {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(5px);
+        }
+
         .mouse-scroll {
             width: 26px;
             height: 42px;
-            border: 2px solid rgba(255,255,255,0.3);
+            border: 2px solid rgba(255, 255, 255, 0.3);
             border-radius: 20px;
             margin: 0 auto;
             position: relative;
         }
+
         .mouse-scroll .dot {
             width: 4px;
             height: 4px;
@@ -246,16 +274,58 @@
             transform: translateX(-50%);
             animation: scrollMove 2s infinite;
         }
+
         @keyframes scrollMove {
-            0% { top: 10px; opacity: 1; }
-            100% { top: 25px; opacity: 0; }
+            0% {
+                top: 10px;
+                opacity: 1;
+            }
+
+            100% {
+                top: 25px;
+                opacity: 0;
+            }
         }
 
         /* Responsive Adjustments */
         @media (max-width: 768px) {
-            .hero-marker-text { letter-spacing: 5px !important; font-size: 0.6rem !important; }
-            .hero-main-title { letter-spacing: 5px !important; font-size: 3rem !important; }
-            .main-title { font-size: 3.5rem !important; }
+            .hero-marker-text {
+                letter-spacing: 5px !important;
+                font-size: 0.6rem !important;
+            }
+
+            .hero-main-title {
+                letter-spacing: 2px !important;
+                font-size: 2rem !important;
+            }
+
+            .main-title {
+                font-size: 3.5rem !important;
+            }
+
+            .hero-paragraph-mobile {
+                font-size: 0.9rem !important;
+                line-height: 1.6 !important;
+            }
+
+            .brand-intro-title {
+                font-size: 1.3rem !important;
+                line-height: 1.4 !important;
+            }
+
+            .brand-intro-text {
+                font-size: 1rem !important;
+            }
+
+            .brand-intro-icon {
+                font-size: 2rem !important;
+            }
+
+            .brand-intro-badge {
+                font-size: 0.7rem !important;
+                letter-spacing: 1px !important;
+                padding: 0.5rem 1rem !important;
+            }
         }
     </style>
     <!-- Brand Intro Start -->
@@ -263,14 +333,16 @@
         <div class="container py-3">
             <div class="row justify-content-center">
                 <div class="col-lg-10 text-center wow fadeIn" data-wow-delay="0.2s">
-                    <i class="fa fa-quote-left fa-3x text-primary mb-4 opacity-50"></i>
-                    <h2 class="display-6 mb-4" style="line-height: 1.4;">Thylanium is engineered for those who refuse to
+                    <i class="fa fa-quote-left fa-3x text-primary mb-4 opacity-50 brand-intro-icon"></i>
+                    <h2 class="display-6 mb-4 brand-intro-title" style="line-height: 1.4;">Thylanium is engineered for
+                        those who refuse to
                         compromise on quality. Built with superior core strength, precise bonding technology, and
                         carefully selected timber.</h2>
-                    <p class="fs-5 text-muted mb-4">When carpenters demand reliability, designers demand finish, and
+                    <p class="fs-5 text-muted mb-4 brand-intro-text">When carpenters demand reliability, designers
+                        demand finish, and
                         customers demand durability — <strong class="text-dark">Thylanium answers.</strong></p>
                     <div class="d-inline-flex align-items-center bg-white rounded-pill shadow-sm px-4 py-3 mt-3">
-                        <span class="fw-bold text-primary"
+                        <span class="fw-bold text-primary brand-intro-badge"
                             style="letter-spacing: 2px; text-transform: uppercase;">Thylanium — Plywood in Teak
                             Standard.</span>
                     </div>
@@ -281,14 +353,45 @@
     <!-- Brand Intro End -->
     <!-- Audience Section: Architectural Precision Interface -->
     <style>
-        .monolith-pillar:hover { flex: 2 !important; clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%) !important; z-index: 20; }
-        .monolith-pillar:hover .monolith-img { filter: brightness(0.7) saturate(1) contrast(1); transform: scale(1.1); }
-        .monolith-pillar:hover .monolith-label { transform: translateX(0); opacity: 1; }
-        .monolith-pillar:hover .monolith-details { max-height: 400px; opacity: 1; margin-top: 20px; }
-        .monolith-pillar:hover .scanner-beam { animation: scan 2s linear infinite; opacity: 1; }
-        .monolith-pillar:hover .monolith-btn { opacity: 1; transform: translateY(0); margin-top: 30px; }
-        .monolith-btn { opacity: 0; transform: translateY(10px); transition: all 0.5s ease 0.2s; }
-        
+        .monolith-pillar:hover {
+            flex: 2 !important;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%) !important;
+            z-index: 20;
+        }
+
+        .monolith-pillar:hover .monolith-img {
+            filter: brightness(0.7) saturate(1) contrast(1);
+            transform: scale(1.1);
+        }
+
+        .monolith-pillar:hover .monolith-label {
+            transform: translateX(0);
+            opacity: 1;
+        }
+
+        .monolith-pillar:hover .monolith-details {
+            max-height: 400px;
+            opacity: 1;
+            margin-top: 20px;
+        }
+
+        .monolith-pillar:hover .scanner-beam {
+            animation: scan 2s linear infinite;
+            opacity: 1;
+        }
+
+        .monolith-pillar:hover .monolith-btn {
+            opacity: 1;
+            transform: translateY(0);
+            margin-top: 30px;
+        }
+
+        .monolith-btn {
+            opacity: 0;
+            transform: translateY(10px);
+            transition: all 0.5s ease 0.2s;
+        }
+
         .nav-hint {
             position: absolute;
             top: 40%;
@@ -306,33 +409,60 @@
             z-index: 15;
             white-space: nowrap;
         }
-        .monolith-pillar:hover .nav-hint { opacity: 1; transform: translate(-50%, -50%) scale(1); }
-        
-        @keyframes scan { 0% { top: 0; } 100% { top: 100%; } }
+
+        .monolith-pillar:hover .nav-hint {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+
+        @keyframes scan {
+            0% {
+                top: 0;
+            }
+
+            100% {
+                top: 100%;
+            }
+        }
+
         /* Reset content padding on hover for center alignment */
-        .monolith-pillar:hover .monolith-content { padding-left: 5% !important; }
+        .monolith-pillar:hover .monolith-content {
+            padding-left: 5% !important;
+        }
     </style>
     <div class="container-fluid p-0 overflow-hidden">
         <div class="d-flex flex-column flex-lg-row" style="min-height: 750px; background: #000;">
             <!-- Contractor: Engineering Pillar -->
-            <div class="flex-fill position-relative overflow-hidden monolith-pillar group" style="flex: 1; transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1); cursor: pointer; clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%); margin-right: -5%;" onclick="location.href='Audience.html#contractors'">
-                <img class="w-100 h-100 position-absolute top-0 start-0 monolith-img" src="img/img12.png" style="object-fit: cover; filter: brightness(0.4) saturate(0.5) contrast(1.2); transition: all 1s ease;" alt="For Contractors">
-                
+            <div class="flex-fill position-relative overflow-hidden monolith-pillar group"
+                style="flex: 1; transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1); cursor: pointer; clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%); margin-right: -5%;"
+                onclick="location.href='Audience.html#contractors'">
+                <img class="w-100 h-100 position-absolute top-0 start-0 monolith-img" src="img/img12.png"
+                    style="object-fit: cover; filter: brightness(0.4) saturate(0.5) contrast(1.2); transition: all 1s ease;"
+                    alt="For Contractors">
+
                 <!-- Scanner Beam Animation -->
-                <div class="position-absolute top-0 start-0 w-100 scanner-beam" style="height: 2px; background: linear-gradient(to right, transparent, var(--primary), transparent); z-index: 5; opacity: 0;"></div>
+                <div class="position-absolute top-0 start-0 w-100 scanner-beam"
+                    style="height: 2px; background: linear-gradient(to right, transparent, var(--primary), transparent); z-index: 5; opacity: 0;">
+                </div>
 
                 <!-- Navigation Hint -->
                 <div class="nav-hint">EXPLORE FULL STORY</div>
 
                 <div class="position-absolute bottom-0 start-0 w-100 p-5 monolith-content" style="z-index: 10;">
-                    <div class="monolith-label mb-3" style="transform: translateX(-20px); opacity: 0; transition: all 0.5s ease;">
-                        <span class="badge border border-primary text-primary px-3 py-1 text-uppercase" style="letter-spacing: 3px; font-size: 0.7rem;">Grade: Marine-X</span>
+                    <div class="monolith-label mb-3"
+                        style="transform: translateX(-20px); opacity: 0; transition: all 0.5s ease;">
+                        <span class="badge border border-primary text-primary px-3 py-1 text-uppercase"
+                            style="letter-spacing: 3px; font-size: 0.7rem;">Grade: Marine-X</span>
                     </div>
-                    <h2 class="display-4 text-white fw-bold mb-4" style="line-height: 1.1;">THE <span style="color: var(--primary);">BUILDER'S</span><br>PRECISION</h2>
-                    <div class="monolith-details" style="max-height: 0; opacity: 0; overflow: hidden; transition: all 0.6s ease;">
-                        <p class="text-white-50 fs-5 mb-0" style="max-width: 400px;">Optimized for high-impact structural requirements. Calibrated layers for zero-void performance.</p>
+                    <h2 class="display-4 text-white fw-bold mb-4" style="line-height: 1.1;"><span
+                            style="color: var(--primary);">25+</span> YEARS<br>OF LEGACY</h2>
+                    <div class="monolith-details"
+                        style="max-height: 0; opacity: 0; overflow: hidden; transition: all 0.6s ease;">
+                        <p class="text-white-50 fs-5 mb-0" style="max-width: 400px;">Optimized for high-impact
+                            structural requirements. Calibrated layers for zero-void performance.</p>
                         <div class="monolith-btn">
-                            <a href="Audience.html#contractors" class="btn btn-primary btn-sm rounded-pill px-4" style="letter-spacing: 1px; font-size: 0.75rem; font-weight: 700;">
+                            <a href="Audience.html#contractors" class="btn btn-primary btn-sm rounded-pill px-4"
+                                style="letter-spacing: 1px; font-size: 0.75rem; font-weight: 700;">
                                 VIEW DETAILS <i class="fa fa-arrow-right ms-2"></i>
                             </a>
                         </div>
@@ -341,24 +471,37 @@
             </div>
 
             <!-- Dealer: Distribution Pillar -->
-            <div class="flex-fill position-relative overflow-hidden monolith-pillar group" style="flex: 1; transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1); cursor: pointer; clip-path: polygon(15% 0, 100% 0, 85% 100%, 0% 100%); margin-right: -5%;" onclick="location.href='Audience.html#dealers'">
-                <img class="w-100 h-100 position-absolute top-0 start-0 monolith-img" src="img/img13.png" style="object-fit: cover; filter: brightness(0.4) saturate(0.5) contrast(1.2); transition: all 1s ease;" alt="For Dealers">
-                
+            <div class="flex-fill position-relative overflow-hidden monolith-pillar group"
+                style="flex: 1; transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1); cursor: pointer; clip-path: polygon(15% 0, 100% 0, 85% 100%, 0% 100%); margin-right: -5%;"
+                onclick="location.href='Audience.html#dealers'">
+                <img class="w-100 h-100 position-absolute top-0 start-0 monolith-img" src="img/img13.png"
+                    style="object-fit: cover; filter: brightness(0.4) saturate(0.5) contrast(1.2); transition: all 1s ease;"
+                    alt="For Dealers">
+
                 <!-- Scanner Beam Animation -->
-                <div class="position-absolute top-0 start-0 w-100 scanner-beam" style="height: 2px; background: linear-gradient(to right, transparent, var(--primary), transparent); z-index: 5; opacity: 0;"></div>
+                <div class="position-absolute top-0 start-0 w-100 scanner-beam"
+                    style="height: 2px; background: linear-gradient(to right, transparent, var(--primary), transparent); z-index: 5; opacity: 0;">
+                </div>
 
                 <!-- Navigation Hint -->
                 <div class="nav-hint">EXPLORE FULL STORY</div>
 
-                <div class="position-absolute bottom-0 start-0 w-100 p-5 monolith-content" style="z-index: 10; padding-left: 15% !important;">
-                    <div class="monolith-label mb-3" style="transform: translateX(-20px); opacity: 0; transition: all 0.5s ease;">
-                        <span class="badge border border-primary text-primary px-3 py-1 text-uppercase" style="letter-spacing: 3px; font-size: 0.7rem;">Market: Elite</span>
+                <div class="position-absolute bottom-0 start-0 w-100 p-5 monolith-content"
+                    style="z-index: 10; padding-left: 15% !important;">
+                    <div class="monolith-label mb-3"
+                        style="transform: translateX(-20px); opacity: 0; transition: all 0.5s ease;">
+                        <span class="badge border border-primary text-primary px-3 py-1 text-uppercase"
+                            style="letter-spacing: 3px; font-size: 0.7rem;">Market: Elite</span>
                     </div>
-                    <h2 class="display-4 text-white fw-bold mb-4" style="line-height: 1.1;">ELITE <span style="color: var(--primary);">PARTNER</span><br>NETWORK</h2>
-                    <div class="monolith-details" style="max-height: 0; opacity: 0; overflow: hidden; transition: all 0.6s ease;">
-                        <p class="text-white-50 fs-5 mb-0" style="max-width: 400px;">Exclusive distribution support for luxury architectural suppliers. Global standard assurance.</p>
+                    <h2 class="display-4 text-white fw-bold mb-4" style="line-height: 1.1;"><span
+                            style="color: var(--primary);">ELITE</span> PARTNER<br>NETWORK</h2>
+                    <div class="monolith-details"
+                        style="max-height: 0; opacity: 0; overflow: hidden; transition: all 0.6s ease;">
+                        <p class="text-white-50 fs-5 mb-0" style="max-width: 400px;">Exclusive distribution support for
+                            luxury architectural suppliers. Global standard assurance.</p>
                         <div class="monolith-btn">
-                            <a href="Audience.html#dealers" class="btn btn-primary btn-sm rounded-pill px-4" style="letter-spacing: 1px; font-size: 0.75rem; font-weight: 700;">
+                            <a href="Audience.html#dealers" class="btn btn-primary btn-sm rounded-pill px-4"
+                                style="letter-spacing: 1px; font-size: 0.75rem; font-weight: 700;">
                                 VIEW DETAILS <i class="fa fa-arrow-right ms-2"></i>
                             </a>
                         </div>
@@ -367,24 +510,37 @@
             </div>
 
             <!-- Home Owner: Aesthetic Pillar -->
-            <div class="flex-fill position-relative overflow-hidden monolith-pillar group" style="flex: 1; transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1); cursor: pointer; clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);" onclick="location.href='Audience.html#homeowners'">
-                <img class="w-100 h-100 position-absolute top-0 start-0 monolith-img" src="img/img16.png" style="object-fit: cover; filter: brightness(0.4) saturate(0.5) contrast(1.2); transition: all 1s ease;" alt="For Home Owners">
-                
+            <div class="flex-fill position-relative overflow-hidden monolith-pillar group"
+                style="flex: 1; transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1); cursor: pointer; clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);"
+                onclick="location.href='Audience.html#homeowners'">
+                <img class="w-100 h-100 position-absolute top-0 start-0 monolith-img" src="img/img16.png"
+                    style="object-fit: cover; filter: brightness(0.4) saturate(0.5) contrast(1.2); transition: all 1s ease;"
+                    alt="For Home Owners">
+
                 <!-- Scanner Beam Animation -->
-                <div class="position-absolute top-0 start-0 w-100 scanner-beam" style="height: 2px; background: linear-gradient(to right, transparent, var(--primary), transparent); z-index: 5; opacity: 0;"></div>
+                <div class="position-absolute top-0 start-0 w-100 scanner-beam"
+                    style="height: 2px; background: linear-gradient(to right, transparent, var(--primary), transparent); z-index: 5; opacity: 0;">
+                </div>
 
                 <!-- Navigation Hint -->
                 <div class="nav-hint">EXPLORE FULL STORY</div>
 
-                <div class="position-absolute bottom-0 start-0 w-100 p-5 monolith-content" style="z-index: 10; padding-left: 15% !important;">
-                    <div class="monolith-label mb-3" style="transform: translateX(-20px); opacity: 0; transition: all 0.5s ease;">
-                        <span class="badge border border-primary text-primary px-3 py-1 text-uppercase" style="letter-spacing: 3px; font-size: 0.7rem;">Class: Luxury</span>
+                <div class="position-absolute bottom-0 start-0 w-100 p-5 monolith-content"
+                    style="z-index: 10; padding-left: 15% !important;">
+                    <div class="monolith-label mb-3"
+                        style="transform: translateX(-20px); opacity: 0; transition: all 0.5s ease;">
+                        <span class="badge border border-primary text-primary px-3 py-1 text-uppercase"
+                            style="letter-spacing: 3px; font-size: 0.7rem;">Class: Luxury</span>
                     </div>
-                    <h2 class="display-4 text-white fw-bold mb-4" style="line-height: 1.1;">TIMELESS <span style="color: var(--primary);">LEGACY</span><br>SURFACES</h2>
-                    <div class="monolith-details" style="max-height: 0; opacity: 0; overflow: hidden; transition: all 0.6s ease;">
-                        <p class="text-white-50 fs-5 mb-0" style="max-width: 400px;">Engineered for beauty that endures. The final touch for the world's most beautiful homes.</p>
+                    <h2 class="display-4 text-white fw-bold mb-4" style="line-height: 1.1;"><span
+                            style="color: var(--primary);">UNFAILING</span><br>PRECISION</h2>
+                    <div class="monolith-details"
+                        style="max-height: 0; opacity: 0; overflow: hidden; transition: all 0.6s ease;">
+                        <p class="text-white-50 fs-5 mb-0" style="max-width: 400px;">Engineered for beauty that endures.
+                            The final touch for the world's most beautiful homes.</p>
                         <div class="monolith-btn">
-                            <a href="Audience.html#homeowners" class="btn btn-primary btn-sm rounded-pill px-4" style="letter-spacing: 1px; font-size: 0.75rem; font-weight: 700;">
+                            <a href="Audience.html#homeowners" class="btn btn-primary btn-sm rounded-pill px-4"
+                                style="letter-spacing: 1px; font-size: 0.75rem; font-weight: 700;">
                                 VIEW DETAILS <i class="fa fa-arrow-right ms-2"></i>
                             </a>
                         </div>
@@ -404,16 +560,16 @@
         <div class="container">
             <div class="row g-5 align-items-center">
                 <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
-                    <div class="position-relative overflow-hidden rounded-3 shadow-lg" style="min-height: 500px;">
-                        <img class="position-absolute w-100 h-100" src="img/Screenshot 2026-04-11 085845.png"
-                            style="object-fit: cover; transition: transform 0.5s ease;" alt="About Thylanium"
-                            onmouseover="this.style.transform='scale(1.05)'"
-                            onmouseout="this.style.transform='scale(1)'">
-                        <div class="position-absolute top-0 start-0 w-100 h-100"
-                            style="background: linear-gradient(to bottom, transparent 60%, rgba(0,0,0,0.7));"></div>
+                    <div class="position-relative overflow-hidden rounded-3 shadow-sm d-flex align-items-center justify-content-center flex-column"
+                        style="min-height: 500px; background: linear-gradient(145deg, #f8f3ec 0%, #f0e6d3 50%, #e8d9c0 100%); border: 1px solid rgba(185,130,60,0.12);">
+                        <!-- Centered Logo -->
+                        <img src="img/Group 2 (1).png" alt="Thylanium Logo"
+                            style="width: 60%; max-width: 260px; opacity: 0.9; filter: drop-shadow(0 4px 16px rgba(185,130,60,0.25)); transition: opacity 0.4s ease;"
+                            onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.9'">
+                        <!-- Bottom Label -->
                         <div class="position-absolute bottom-0 start-0 p-4 w-100">
-                            <h4 class="text-white mb-2" style="letter-spacing: 1px;">Elevating Standards</h4>
-                            <div style="width: 50px; height: 3px; background-color: var(--primary);"></div>
+                            <h4 class="text-dark mb-2" style="letter-spacing: 1px;">Elevating Standards</h4>
+                            <div style="width: 50px; height: 2px; background-color: var(--primary);"></div>
                         </div>
                     </div>
                 </div>
@@ -422,8 +578,13 @@
                         <div class="title text-start mb-4">
                             <h1 class="display-5 mb-0">About Thylanium</h1>
                         </div>
-                        <p class="fs-4 text-muted mb-4 pt-2" style="line-height: 1.6;">Thylanium was created with a
-                            clear vision — to elevate the standard of plywood in India.</p>
+                        <p class="fs-4 text-muted mb-4 pt-2" style="line-height: 1.6;">Thylanium is the result of a long
+
+                            journey shaped by a clear vision — to
+
+                            elevate the standard of plywood in
+
+                            India.</p>
 
                         <p class="mb-4 text-body" style="line-height: 1.8;">While most plywood focuses only on price
                             competition, Thylanium focuses on performance, strength, and long-term reliability. Our
@@ -455,7 +616,7 @@
 
 
 
-    
+
     <!-- Two Grades. One Standard: Editorial Section -->
     <div class="container-xxl py-5 my-5 overflow-hidden">
         <div class="container">
@@ -463,7 +624,7 @@
                 <div class="col-lg-7 wow fadeInLeft" data-wow-delay="0.1s">
                     <h6 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px; font-weight: 800;">Our
                         Philosophy</h6>
-                    <h1 class="display-4 text-dark fw-bold mb-4">Two Grades. <br><span
+                    <h1 class="display-4 text-dark fw-bold mb-4">Many Grades. <br><span
                             style="color: var(--primary);">One Standard.</span></h1>
                     <p class="fs-5 text-muted mb-0" style="line-height: 1.8;">Thylanium products are crafted to perform
                         with precision, durability, and a flawless surface finish that professionals trust and
@@ -484,10 +645,9 @@
                                 style="width: 60px; height: 60px;">
                                 <i class="fa fa-home fa-xl"></i>
                             </div>
-                            <h3 class="fw-bold mb-0">MR Grade</h3>
+                            <h3 class="fw-bold mb-0">Thylanium S hilak - MR</h3>
                         </div>
-                        <p class="text-muted fs-5 mb-4">Engineered for interior excellence, ensuring your indoor
-                            furniture, cabinetry, and designs last generations without warping.</p>
+                        <p class="text-muted fs-5 mb-4">Engineered for everyday resilience.</p>
                         <div class="mt-auto">
                             <a href="MRGradePlywood.html"
                                 class="text-primary fw-bold text-uppercase d-inline-flex align-items-center"
@@ -510,10 +670,9 @@
                                 style="width: 60px; height: 60px;">
                                 <i class="fa fa-shield-alt fa-xl"></i>
                             </div>
-                            <h3 class="fw-bold mb-0">Marine Grade</h3>
+                            <h3 class="fw-bold mb-0">Thylanium Marine Hawk</h3>
                         </div>
-                        <p class="text-muted fs-5 mb-4">Unmatched moisture resistance. Built to effortlessly withstand
-                            extreme conditions, heavy usage, and intense structural stress.</p>
+                        <p class="text-muted fs-5 mb-4">Engineered to withstand the toughest conditions.</p>
                         <div class="mt-auto">
                             <a href="ThylaniumMarineGradePlywood.html"
                                 class="text-primary fw-bold text-uppercase d-inline-flex align-items-center"
@@ -536,96 +695,6 @@
         </div>
     </div>
     <!-- Grades End -->
-
-    <!-- Philosophy Start -->
-    <div class="container-fluid bg-light py-5 my-5">
-        <div class="container py-5">
-            <div class="row g-5 align-items-center">
-                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                    <div class="title text-start mb-4">
-                        <h1 class="display-5 mb-0">Our Philosophy</h1>
-                    </div>
-                    <h4 class="text-primary mb-4 fw-bold pt-2" style="letter-spacing: 1px;">Not Just Plywood.<br>A
-                        Standard.</h4>
-                    <p class="mb-4 text-body" style="line-height: 1.8;">In woodworking, the quality of plywood
-                        determines the life of the final product. Thylanium is built with a simple philosophy:</p>
-
-                    <div
-                        class="bg-white p-4 rounded-3 shadow-sm mb-4 position-relative border-start border-5 border-primary">
-                        <p class="fs-5 fw-bold fst-italic mb-0 text-dark position-relative z-1"
-                            style="line-height: 1.6;">"If the core is strong, everything built on it lasts longer."</p>
-                    </div>
-
-                    <p class="mb-4 fw-bold text-dark fs-5">This philosophy drives our focus on:</p>
-                    <div class="row g-3 mb-5">
-                        <div class="col-sm-6">
-                            <div class="d-flex align-items-center bg-white p-3 rounded-3 shadow-sm"
-                                style="transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-3px)'"
-                                onmouseout="this.style.transform='translateY(0)'">
-                                <div class="d-flex align-items-center justify-content-center bg-light rounded-circle me-3"
-                                    style="width: 45px; height: 45px;">
-                                    <i class="fa fa-check text-primary"></i>
-                                </div>
-                                <span class="fw-medium text-dark">Stronger core composition</span>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="d-flex align-items-center bg-white p-3 rounded-3 shadow-sm"
-                                style="transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-3px)'"
-                                onmouseout="this.style.transform='translateY(0)'">
-                                <div class="d-flex align-items-center justify-content-center bg-light rounded-circle me-3"
-                                    style="width: 45px; height: 45px;">
-                                    <i class="fa fa-check text-primary"></i>
-                                </div>
-                                <span class="fw-medium text-dark">Superior bonding tech</span>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="d-flex align-items-center bg-white p-3 rounded-3 shadow-sm"
-                                style="transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-3px)'"
-                                onmouseout="this.style.transform='translateY(0)'">
-                                <div class="d-flex align-items-center justify-content-center bg-light rounded-circle me-3"
-                                    style="width: 45px; height: 45px;">
-                                    <i class="fa fa-check text-primary"></i>
-                                </div>
-                                <span class="fw-medium text-dark">Precision manufacturing</span>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="d-flex align-items-center bg-white p-3 rounded-3 shadow-sm"
-                                style="transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-3px)'"
-                                onmouseout="this.style.transform='translateY(0)'">
-                                <div class="d-flex align-items-center justify-content-center bg-light rounded-circle me-3"
-                                    style="width: 45px; height: 45px;">
-                                    <i class="fa fa-check text-primary"></i>
-                                </div>
-                                <span class="fw-medium text-dark">Reliable performance</span>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="philosophy.html" class="btn btn-primary py-3 px-5 rounded-pill shadow-sm"
-                        style="transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-3px)'"
-                        onmouseout="this.style.transform='translateY(0)'">View Our Philosophy</a>
-                </div>
-                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="position-relative overflow-hidden rounded-3 shadow-lg" style="min-height: 550px;">
-                        <img class="position-absolute w-100 h-100" src="img/img2.jpg"
-                            style="object-fit: cover; transition: transform 0.6s ease;" alt="Philosophy Core"
-                            onmouseover="this.style.transform='scale(1.05)'"
-                            onmouseout="this.style.transform='scale(1)'">
-                        <div class="position-absolute top-0 start-0 w-100 h-100"
-                            style="background: linear-gradient(to bottom, transparent 60%, rgba(0,0,0,0.8));"></div>
-                        <div class="position-absolute bottom-0 start-0 p-5 w-100">
-                            <h3 class="text-white mb-3 text-uppercase" style="letter-spacing: 2px;">Built To Last</h3>
-                            <div style="width: 60px; height: 4px; background-color: var(--primary);"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Philosophy End -->
-
 
 
 
@@ -755,8 +824,8 @@
     <!-- Narrative Parallax Section -->
     <div class="container-fluid p-0 m-0 position-relative overflow-hidden" style="height: 500px; background: #000;">
         <!-- Fixed Background for Parallax effect -->
-        <div class="position-absolute top-0 start-0 w-100 h-100" 
-             style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('img/img11.jpg') no-repeat center center; background-size: cover; background-attachment: fixed;">
+        <div class="position-absolute top-0 start-0 w-100 h-100"
+            style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('img/img11.jpg') no-repeat center center; background-size: cover; background-attachment: fixed;">
         </div>
 
         <div class="container h-100 position-relative" style="z-index: 2;">
@@ -765,19 +834,25 @@
                     <div class="wow fadeInLeft" data-wow-delay="0.1s">
                         <div class="d-flex align-items-center mb-4">
                             <div class="bg-primary" style="width: 50px; height: 2px;"></div>
-                            <span class="text-white text-uppercase fw-bold ms-3" style="letter-spacing: 10px; font-size: 0.8rem;">The Thylanium Edge</span>
+                            <span class="text-white text-uppercase fw-bold ms-3"
+                                style="letter-spacing: 10px; font-size: 0.8rem;">The Thylanium Edge</span>
                         </div>
-                        <h2 class="display-3 text-white fw-bold mb-4" style="line-height: 1.1; letter-spacing: -1px;">UNCOMPROMISING <br><span style="color: var(--primary);">STRENGTH.</span> ARCHITECTURAL VISION.</h2>
+                        <h2 class="display-3 text-white fw-bold mb-4" style="line-height: 1.1; letter-spacing: -1px;">
+                            <span style="color: var(--primary);">UNFAILING</span> STRENGTH<br>&amp; PRECISION
+                        </h2>
                         <div class="row">
                             <div class="col-lg-6">
-                                <p class="text-white opacity-75 fs-5 pe-lg-5" style="border-left: 2px solid var(--primary); padding-left: 30px;">Every panel we produce is a testament to precision engineering, designed to provide the ultimate foundation for visionary spaces.</p>
+                                <p class="text-white opacity-75 fs-5 pe-lg-5"
+                                    style="border-left: 2px solid var(--primary); padding-left: 30px;">Every panel we
+                                    produce is a testament to precision engineering, designed to provide the ultimate
+                                    foundation for visionary spaces.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        
+
         <!-- Subtle Corner Detail -->
         <div class="position-absolute bottom-0 end-0 p-5 d-none d-lg-block opacity-25 wow fadeIn" data-wow-delay="0.5s">
             <span class="text-white display-1 fw-bold" style="letter-spacing: 15px;">PLYWOOD</span>
@@ -788,19 +863,24 @@
     <div class="container-fluid p-0 m-0 overflow-hidden" id="get-quote" style="background: #000;">
         <div class="position-relative" style="min-height: 800px;">
             <!-- Background Image with Overlay -->
-            <img class="position-absolute w-100 h-100" src="img/img13.png" style="object-fit: cover; filter: brightness(0.3) saturate(0.5);" alt="Architectural Background">
-            
+            <img class="position-absolute w-100 h-100" src="img/img13.png"
+                style="object-fit: cover; filter: brightness(0.3) saturate(0.5);" alt="Architectural Background">
+
             <div class="container h-100 position-relative" style="z-index: 5;">
                 <div class="row h-100 align-items-center py-5">
                     <!-- Text Content -->
                     <div class="col-lg-6 mb-5 mb-lg-0 wow fadeInLeft" data-wow-delay="0.1s">
                         <div class="d-flex align-items-center mb-4">
                             <div class="bg-primary" style="width: 40px; height: 2px;"></div>
-                            <span class="text-primary text-uppercase fw-bold ms-3" style="letter-spacing: 5px; font-size: 0.8rem;">Quotation Request</span>
+                            <span class="text-primary text-uppercase fw-bold ms-3"
+                                style="letter-spacing: 5px; font-size: 0.8rem;">PARTNER WITH US</span>
                         </div>
-                        <h1 class="display-3 text-white fw-bold mb-4" style="line-height: 1.1;">PRECISION <br><span style="color: var(--primary);">PARTNERSHIP.</span></h1>
-                        <p class="text-white-50 fs-5 pe-lg-5 mb-0" style="max-width: 500px; line-height: 1.8;">Partner with Thylanium for consistent supply, dependable quality, and competitive pricing built for your business.</p>
-                        
+                        <h1 class="display-3 text-white fw-bold mb-4" style="line-height: 1.1;">DEALERS
+                            <br>ARCHITECTS<br><span style="color: var(--primary);">CONTRACTORS</span></h1>
+                        <p class="text-white-50 fs-5 pe-lg-5 mb-0" style="max-width: 500px; line-height: 1.8;">Partner
+                            with Thylanium for consistent supply, dependable quality, and competitive pricing built for
+                            your business.</p>
+
                         <div class="mt-5 d-none d-lg-block">
                             <div class="d-flex align-items-center text-white-50 mb-3">
                                 <i class="fa fa-check-circle text-primary me-3"></i>
@@ -816,41 +896,58 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <!-- Form Container -->
                     <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.3s">
-                        <div class="glass-form p-4 p-md-5 rounded-4" style="background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.1); box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);">
-                            <h3 class="text-white mb-4 fw-bold" style="letter-spacing: 1px;">Request Pricing</h3>
-                            <form>
+                        <div class="glass-form p-4 p-md-5 rounded-4"
+                            style="background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.1); box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);">
+                            <h3 class="text-white mb-4 fw-bold" style="letter-spacing: 1px;">Write to us</h3>
+                            <form onsubmit="sendQuoteEmail(event)">
                                 <div class="row g-4">
                                     <div class="col-12 col-md-6">
                                         <div class="form-floating-custom">
-                                            <input type="text" class="form-control bg-transparent text-white border-0 border-bottom border-secondary rounded-0 px-0 mb-2 focus-primary" placeholder="Full Name" style="height: 50px; transition: all 0.3s ease;">
+                                            <input type="text" id="quote_name"
+                                                class="form-control bg-transparent text-white border-0 border-bottom border-secondary rounded-0 px-0 mb-2 focus-primary"
+                                                placeholder="Full Name" style="height: 50px; transition: all 0.3s ease;"
+                                                required>
                                         </div>
                                     </div>
                                     <div class="col-12 col-md-6">
                                         <div class="form-floating-custom">
-                                            <input type="email" class="form-control bg-transparent text-white border-0 border-bottom border-secondary rounded-0 px-0 mb-2 focus-primary" placeholder="Email Address" style="height: 50px; transition: all 0.3s ease;">
+                                            <input type="email" id="quote_email"
+                                                class="form-control bg-transparent text-white border-0 border-bottom border-secondary rounded-0 px-0 mb-2 focus-primary"
+                                                placeholder="Email Address"
+                                                style="height: 50px; transition: all 0.3s ease;" required>
                                         </div>
                                     </div>
                                     <div class="col-12 col-md-6">
                                         <div class="form-floating-custom">
-                                            <input type="text" class="form-control bg-transparent text-white border-0 border-bottom border-secondary rounded-0 px-0 mb-2 focus-primary" placeholder="Contact Number" style="height: 50px; transition: all 0.3s ease;">
+                                            <input type="text" id="quote_phone"
+                                                class="form-control bg-transparent text-white border-0 border-bottom border-secondary rounded-0 px-0 mb-2 focus-primary"
+                                                placeholder="Contact Number"
+                                                style="height: 50px; transition: all 0.3s ease;" required>
                                         </div>
                                     </div>
                                     <div class="col-12 col-md-6">
-                                        <select class="form-select bg-transparent text-white-50 border-0 border-bottom border-secondary rounded-0 px-0 focus-primary" style="height: 50px; transition: all 0.3s ease;">
-                                            <option selected class="bg-dark">Select Requirement</option>
+                                        <select id="quote_requirement"
+                                            class="form-select bg-transparent text-white-50 border-0 border-bottom border-secondary rounded-0 px-0 focus-primary"
+                                            style="height: 50px; transition: all 0.3s ease;" required>
+                                            <option selected value="" class="bg-dark">Select Requirement</option>
                                             <option class="bg-dark">Marine Grade Plywood</option>
                                             <option class="bg-dark">MR Grade Plywood</option>
                                             <option class="bg-dark">Bulk Architectural Supply</option>
                                         </select>
                                     </div>
                                     <div class="col-12">
-                                        <textarea class="form-control bg-transparent text-white border-0 border-bottom border-secondary rounded-0 px-0 mb-4 focus-primary" placeholder="Tell us about your project" style="height: 100px; transition: all 0.3s ease;"></textarea>
+                                        <textarea id="quote_message"
+                                            class="form-control bg-transparent text-white border-0 border-bottom border-secondary rounded-0 px-0 mb-4 focus-primary"
+                                            placeholder="Tell us about your project"
+                                            style="height: 100px; transition: all 0.3s ease;" required></textarea>
                                     </div>
                                     <div class="col-12">
-                                        <button class="btn btn-primary w-100 py-3 rounded-pill text-uppercase fw-bold shadow-lg" type="submit" style="letter-spacing: 3px; font-size: 0.9rem;">
+                                        <button
+                                            class="btn btn-primary w-100 py-3 rounded-pill text-uppercase fw-bold shadow-lg"
+                                            type="submit" style="letter-spacing: 3px; font-size: 0.9rem;">
                                             Send Request <i class="fa fa-paper-plane ms-2"></i>
                                         </button>
                                     </div>
@@ -871,6 +968,7 @@
             border-bottom-color: var(--primary) !important;
             color: #fff !important;
         }
+
         .focus-primary::placeholder {
             color: rgba(255, 255, 255, 0.4) !important;
             font-size: 0.9rem;
@@ -970,14 +1068,14 @@
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-light mb-4">Address</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Pallikkara, Ernakulam, Kerala - 683565</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 91 2828 0202</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@thylanium.com</p>
                     <div class="d-flex pt-2">
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://facebook.com/thylanium"
+                            target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://instagram.com/thylanium"
+                            target="_blank"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
@@ -992,13 +1090,7 @@
                     <a class="btn btn-link" href="service.html">Our Products</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Newsletter</h4>
-                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-                    <div class="position-relative mx-auto" style="max-width: 400px;">
-                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                        <button type="button"
-                            class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
-                    </div>
+                    <h4 class="text-light mb-4">THYLANIUM</h4><p>Delivering uncompromising strength and architectural precision for over 25 years. Layered with Legacy.</p>
                 </div>
             </div>
         </div>
@@ -1006,11 +1098,12 @@
             <div class="copyright">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">THYLANIUM</a>, All Right Reserved.
+                        &copy; <a class="border-bottom" href="https://www.thylanium.com">THYLANIUM</a>, All Right
+                        Reserved.
                     </div>
                     <div class="col-md-6 text-center text-md-end">
                         <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                        Designed By <a class="border-bottom" href="https://htmlcodex.com">Bigmonksx</a>
+                        Designed By <a class="border-bottom" href="https://htmlcodex.com">Bigmonks</a>
                     </div>
                 </div>
             </div>
@@ -1020,13 +1113,29 @@
 
 
     <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/" target="_blank"
+    <a href="https://wa.me/919128280202" target="_blank"
         style="position: fixed; bottom: 30px; right: 30px; width: 60px; height: 60px; background-color: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 25px rgba(37,211,102,0.3); z-index: 9999; transition: transform 0.3s ease; text-decoration: none;"
         onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
         <i class="fab fa-whatsapp" style="color: #fff; font-size: 32px;"></i>
     </a>
 
 
+    <script>
+        function sendQuoteEmail(event) {
+            event.preventDefault();
+            const name = document.getElementById('quote_name').value;
+            const email = document.getElementById('quote_email').value;
+            const phone = document.getElementById('quote_phone').value;
+            const requirement = document.getElementById('quote_requirement').value;
+            const message = document.getElementById('quote_message').value;
+
+            const subject = "Thylanium Quote Request - " + requirement;
+            const body = `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nRequirement: ${requirement}\n\nProject Details:\n${message}`;
+
+            const mailtoLink = `mailto:info@thylanium.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+            window.location.href = mailtoLink;
+        }
+    </script>
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -1043,3 +1152,4 @@
 </body>
 
 </html>
+
