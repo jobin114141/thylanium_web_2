@@ -73,11 +73,16 @@
 
     <!-- Hero Section: Cinematic Architectural Majesty -->
     <div class="container-fluid p-0 position-relative overflow-hidden hero-blueprint"
-        style="height: 100vh; background: #000;">
+        style="height: 100vh; background: #0c0c0c;">
         <!-- Background Image with Ken Burns Effect -->
         <div class="position-absolute top-0 start-0 w-100 h-100">
-            <img class="w-100 h-100 ken-burns" src="img/img10.jpg" alt="Thylanium Heritage"
-                style="object-fit: cover; filter: brightness(0.35) contrast(1.1) saturate(0.8);">
+            <img class="w-100 h-100 ken-burns" src="img/cinematic_hero.png" alt="Thylanium Cinematic"
+                style="object-fit: cover; filter: brightness(0.55) contrast(1.1) saturate(1.1);">
+        </div>
+
+        <!-- Cinematic Top Shadow for UI Visibility -->
+        <div class="position-absolute top-0 start-0 w-100 h-25" 
+            style="background: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, transparent 100%); z-index: 2; pointer-events: none;">
         </div>
 
         <!-- Architectural Grid Overlay -->
@@ -95,16 +100,16 @@
                 <div class="col-lg-10 text-center">
                     <!-- Slogan with Animated Bar -->
                     <div class="d-inline-block position-relative mb-5 wow fadeIn" data-wow-delay="0.8s">
-                        <h1 class="text-white fs-1 mb-0 fw-bold hero-main-title"
-                            style="letter-spacing: 8px; text-transform: uppercase;">LAYERED WITH LEGACY</h1>
-                        <div class="slogan-bar"></div>
+                        <h1 id="heroTitle" class="fs-1 mb-0 fw-bold hero-main-title"
+                            style="letter-spacing: 12px; text-transform: uppercase; color: #fdfaf5; text-shadow: 0 4px 15px rgba(0,0,0,0.3);">THE TEAK OF PLYWOOD</h1>
+                        <div class="slogan-bar" style="background: var(--primary); height: 3px; box-shadow: 0 0 20px var(--primary);"></div>
                     </div>
 
                     <!-- Hero Paragraph (Centered) -->
                     <div class="row justify-content-center wow fadeIn" data-wow-delay="1s">
                         <div class="col-lg-8">
-                            <p class="text-primary fs-5 mb-5 px-lg-5 hero-paragraph-mobile"
-                                style="line-height: 2; font-weight: 300;">Engineered for those who demand excellence.
+                            <p class="fs-5 mb-5 px-lg-5 hero-paragraph-mobile"
+                                style="line-height: 2; font-weight: 300; color: #ece2d0; opacity: 0.9;">Engineered for those who demand excellence.
                                 Our plywood merges advanced structural integrity with the timeless aesthetics of fine
                                 wood craftsmanship.</p>
                         </div>
@@ -136,6 +141,10 @@
                 linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
                 linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
             background-size: 50px 50px;
+        }
+
+        #heroTitle {
+            transition: opacity 1s ease-in-out;
         }
 
         .ken-burns {
@@ -645,7 +654,7 @@
                                 style="width: 60px; height: 60px;">
                                 <i class="fa fa-home fa-xl"></i>
                             </div>
-                            <h3 class="fw-bold mb-0">Thylanium S hilak - MR</h3>
+                            <h3 class="fw-bold mb-0">Thylanium SHILAK - MR</h3>
                         </div>
                         <p class="text-muted fs-5 mb-4">Engineered for everyday resilience.</p>
                         <div class="mt-auto">
@@ -1135,6 +1144,18 @@
             const mailtoLink = `mailto:info@thylanium.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
             window.location.href = mailtoLink;
         }
+
+        // Hero Title Animation
+        setTimeout(() => {
+            const title = document.getElementById('heroTitle');
+            if (title) {
+                title.style.opacity = 0;
+                setTimeout(() => {
+                    title.innerText = 'LAYERED WITH LEGACY';
+                    title.style.opacity = 1;
+                }, 1000);
+            }
+        }, 3000);
     </script>
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
