@@ -16,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Roboto:wght@300;500;700;900&display=swap"
         rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
@@ -60,7 +60,7 @@
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <a href="index.html" class="nav-item nav-link active">Home</a>
                 <a href="about.html" class="nav-item nav-link">About</a>
-                <a href="Audience.html" class="nav-item nav-link">Audience</a>
+                <a href="PURPOSE.html" class="nav-item nav-link">PURPOSE</a>
                 <a href="service.html" class="nav-item nav-link">PRODUCTS</a>
                 <a href="contact.html" class="nav-item nav-link">Contact</a>
             </div>
@@ -76,12 +76,12 @@
         style="height: 100vh; background: #0c0c0c;">
         <!-- Background Image with Ken Burns Effect -->
         <div class="position-absolute top-0 start-0 w-100 h-100">
-            <img class="w-100 h-100 ken-burns" src="img/cinematic_hero.png" alt="Thylanium Cinematic"
-                style="object-fit: cover; filter: brightness(0.55) contrast(1.1) saturate(1.1);">
+            <img class="w-100 h-100 ken-burns" src="img/cinematic_hero.png" alt="Thylanium Space"
+                style="object-fit: cover; filter: brightness(0.7) contrast(1.1) saturate(1.1);">
         </div>
 
         <!-- Cinematic Top Shadow for UI Visibility -->
-        <div class="position-absolute top-0 start-0 w-100 h-25" 
+        <div class="position-absolute top-0 start-0 w-100 h-25"
             style="background: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, transparent 100%); z-index: 2; pointer-events: none;">
         </div>
 
@@ -100,16 +100,19 @@
                 <div class="col-lg-10 text-center">
                     <!-- Slogan with Animated Bar -->
                     <div class="d-inline-block position-relative mb-5 wow fadeIn" data-wow-delay="0.8s">
-                        <h1 id="heroTitle" class="fs-1 mb-0 fw-bold hero-main-title"
-                            style="letter-spacing: 12px; text-transform: uppercase; color: #fdfaf5; text-shadow: 0 4px 15px rgba(0,0,0,0.3);">THE TEAK OF PLYWOOD</h1>
-                        <div class="slogan-bar" style="background: var(--primary); height: 3px; box-shadow: 0 0 20px var(--primary);"></div>
+                        <h1 id="heroTitle" class="fs-1 mb-0 hero-main-title"
+                            style="letter-spacing: 12px; text-transform: uppercase; color: #fdfaf5; text-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+                            THE TEAK OF PLYWOOD</h1>
+                        <div class="slogan-bar"
+                            style="background: var(--primary); height: 3px; box-shadow: 0 0 20px var(--primary);"></div>
                     </div>
 
                     <!-- Hero Paragraph (Centered) -->
                     <div class="row justify-content-center wow fadeIn" data-wow-delay="1s">
                         <div class="col-lg-8">
                             <p class="fs-5 mb-5 px-lg-5 hero-paragraph-mobile"
-                                style="line-height: 2; font-weight: 300; color: #ece2d0; opacity: 0.9;">Engineered for those who demand excellence.
+                                style="line-height: 2; font-weight: 300; color: #ece2d0; opacity: 0.9;">Engineered for
+                                those who demand excellence.
                                 Our plywood merges advanced structural integrity with the timeless aesthetics of fine
                                 wood craftsmanship.</p>
                         </div>
@@ -136,6 +139,10 @@
     <!-- Hero End -->
 
     <style>
+        .hero-main-title {
+            font-weight: 300 !important;
+        }
+
         .blueprint-grid {
             background-image:
                 linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
@@ -306,6 +313,7 @@
             .hero-main-title {
                 letter-spacing: 2px !important;
                 font-size: 2rem !important;
+                font-weight: 300 !important;
             }
 
             .main-title {
@@ -347,9 +355,12 @@
                         those who refuse to
                         compromise on quality. Built with superior core strength, precise bonding technology, and
                         carefully selected timber.</h2>
-                    <p class="fs-5 text-muted mb-4 brand-intro-text">When carpenters demand reliability, designers
-                        demand finish, and
-                        customers demand durability — <strong class="text-dark">Thylanium answers.</strong></p>
+                    <p class="fs-5 text-muted mb-4 brand-intro-text" style="line-height: 1.8;">When carpenters demand
+                        reliability,<br>
+                        When designers demand finish,<br>
+                        When customers demand durability —<br>
+                        <strong class="text-dark">Yes! Thylanium Answers.</strong>
+                    </p>
                     <div class="d-inline-flex align-items-center bg-white rounded-pill shadow-sm px-4 py-3 mt-3">
                         <span class="fw-bold text-primary brand-intro-badge"
                             style="letter-spacing: 2px; text-transform: uppercase;">Thylanium — Plywood in Teak
@@ -360,7 +371,7 @@
         </div>
     </div>
     <!-- Brand Intro End -->
-    <!-- Audience Section: Architectural Precision Interface -->
+    <!-- PURPOSE Section: Architectural Precision Interface -->
     <style>
         .monolith-pillar:hover {
             flex: 2 !important;
@@ -444,7 +455,7 @@
             <!-- Contractor: Engineering Pillar -->
             <div class="flex-fill position-relative overflow-hidden monolith-pillar group"
                 style="flex: 1; transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1); cursor: pointer; clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%); margin-right: -5%;"
-                onclick="location.href='Audience.html#contractors'">
+                onclick="location.href='PURPOSE.html#contractors'">
                 <img class="w-100 h-100 position-absolute top-0 start-0 monolith-img" src="img/pillar_legacy.png"
                     style="object-fit: cover; filter: brightness(0.4) saturate(0.5) contrast(1.2); transition: all 1s ease;"
                     alt="For Contractors">
@@ -470,7 +481,7 @@
                         <p class="text-white-50 fs-5 mb-0" style="max-width: 400px;">Optimized for high-impact
                             structural requirements. Calibrated layers for zero-void performance.</p>
                         <div class="monolith-btn">
-                            <a href="Audience.html#contractors" class="btn btn-primary btn-sm rounded-pill px-4"
+                            <a href="PURPOSE.html#contractors" class="btn btn-primary btn-sm rounded-pill px-4"
                                 style="letter-spacing: 1px; font-size: 0.75rem; font-weight: 700;">
                                 VIEW DETAILS <i class="fa fa-arrow-right ms-2"></i>
                             </a>
@@ -482,7 +493,7 @@
             <!-- Dealer: Distribution Pillar -->
             <div class="flex-fill position-relative overflow-hidden monolith-pillar group"
                 style="flex: 1; transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1); cursor: pointer; clip-path: polygon(15% 0, 100% 0, 85% 100%, 0% 100%); margin-right: -5%;"
-                onclick="location.href='Audience.html#dealers'">
+                onclick="location.href='PURPOSE.html#dealers'">
                 <img class="w-100 h-100 position-absolute top-0 start-0 monolith-img" src="img/pillar_elite.png"
                     style="object-fit: cover; filter: brightness(0.4) saturate(0.5) contrast(1.2); transition: all 1s ease;"
                     alt="For Dealers">
@@ -509,7 +520,7 @@
                         <p class="text-white-50 fs-5 mb-0" style="max-width: 400px;">Exclusive distribution support for
                             luxury architectural suppliers. Global standard assurance.</p>
                         <div class="monolith-btn">
-                            <a href="Audience.html#dealers" class="btn btn-primary btn-sm rounded-pill px-4"
+                            <a href="PURPOSE.html#dealers" class="btn btn-primary btn-sm rounded-pill px-4"
                                 style="letter-spacing: 1px; font-size: 0.75rem; font-weight: 700;">
                                 VIEW DETAILS <i class="fa fa-arrow-right ms-2"></i>
                             </a>
@@ -521,7 +532,7 @@
             <!-- Home Owner: Aesthetic Pillar -->
             <div class="flex-fill position-relative overflow-hidden monolith-pillar group"
                 style="flex: 1; transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1); cursor: pointer; clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);"
-                onclick="location.href='Audience.html#homeowners'">
+                onclick="location.href='PURPOSE.html#homeowners'">
                 <img class="w-100 h-100 position-absolute top-0 start-0 monolith-img" src="img/pillar_precision.png"
                     style="object-fit: cover; filter: brightness(0.4) saturate(0.5) contrast(1.2); transition: all 1s ease;"
                     alt="For Home Owners">
@@ -548,7 +559,7 @@
                         <p class="text-white-50 fs-5 mb-0" style="max-width: 400px;">Engineered for beauty that endures.
                             The final touch for the world's most beautiful homes.</p>
                         <div class="monolith-btn">
-                            <a href="Audience.html#homeowners" class="btn btn-primary btn-sm rounded-pill px-4"
+                            <a href="PURPOSE.html#homeowners" class="btn btn-primary btn-sm rounded-pill px-4"
                                 style="letter-spacing: 1px; font-size: 0.75rem; font-weight: 700;">
                                 VIEW DETAILS <i class="fa fa-arrow-right ms-2"></i>
                             </a>
@@ -646,7 +657,7 @@
             </div>
 
             <div class="row g-0 rounded-4 overflow-hidden shadow-lg border border-light" style="background: #fff;">
-                <!-- MR Grade: Residential Excellence -->
+                <!-- Thylanium SHILAK MR: Residential Excellence -->
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s" style="border-right: 1px solid #f0f0f0;">
                     <div class="p-5 h-100 position-relative group" style="background: #fff; transition: all 0.4s ease;">
                         <div class="d-flex align-items-center mb-4">
@@ -661,7 +672,7 @@
                             <a href="MRGradePlywood.html"
                                 class="text-primary fw-bold text-uppercase d-inline-flex align-items-center"
                                 style="letter-spacing: 2px; font-size: 0.85rem; text-decoration: none;">
-                                DISCOVER INTERIOR SERIES <i class="fa fa-arrow-right ms-2 mt-1"></i>
+                                PROFESSIONAL INTERIOR SERIES<i class="fa fa-arrow-right ms-2 mt-1"></i>
                             </a>
                         </div>
                         <!-- Decorative background element -->
@@ -686,7 +697,7 @@
                             <a href="ThylaniumMarineGradePlywood.html"
                                 class="text-primary fw-bold text-uppercase d-inline-flex align-items-center"
                                 style="letter-spacing: 2px; font-size: 0.85rem; text-decoration: none;">
-                                DISCOVER HEAVY-DUTY SERIES <i class="fa fa-arrow-right ms-2 mt-1"></i>
+                                HEAVY-DUTY MARINE SERIES<i class="fa fa-arrow-right ms-2 mt-1"></i>
                             </a>
                         </div>
                         <!-- Decorative background element -->
@@ -717,17 +728,22 @@
                         <h6 class="text-primary text-uppercase mb-3" style="letter-spacing: 2px;">The Thylanium Edge
                         </h6>
                         <h1 class="display-4 text-dark mb-4">Why Choose Thylanium?</h1>
-                        <p class="fs-5 text-muted mb-5" style="line-height: 1.7;">We refuse to compromise on quality.
+                        <p class="fs-5 text-muted mb-4" style="line-height: 1.7;">
                             Every sheet that leaves our facility is crafted for longevity, precision, and ultimate
-                            strength. Here is what sets us apart.</p>
-                        <div class="position-relative overflow-hidden rounded-3 shadow-lg" style="height: 350px;">
+                            strength.</p>
+                        <p class="fs-5 text-muted mb-5 d-none d-lg-block" style="line-height: 1.7;">Here is what sets us
+                            apart.</p>
+
+                        <div class="position-relative overflow-hidden rounded-3 shadow-lg mb-4" style="height: 350px;">
                             <img class="img-fluid w-100 h-100" src="img/img9.png" alt="Thylanium Edge"
                                 style="object-fit: cover;">
                             <div class="position-absolute w-100 h-100 top-0 start-0"
                                 style="background: linear-gradient(to top, rgba(0,0,0,0.8), transparent 70%);"></div>
                             <h4 class="position-absolute bottom-0 start-0 p-4 text-white w-100 m-0"
-                                style="letter-spacing: 2px;">PURE STRENGTH</h4>
+                                style="letter-spacing: 2px;">THYLANIUM PILLARS</h4>
                         </div>
+                        <p class="fs-5 text-muted mb-5 d-block d-lg-none" style="line-height: 1.7;">Here is what sets us
+                            apart.</p>
                     </div>
                 </div>
 
@@ -801,8 +817,9 @@
                             </div>
                             <div class="ms-4">
                                 <h4 class="text-dark mb-2">Carpenter Friendly</h4>
-                                <p class="mb-0 text-muted" style="line-height: 1.7; font-size: 1.05rem;">Thylanium
-                                    plywood cuts cleaner, holds screws stronger, and reduces wastage — making it a
+                                <p class="mb-0 text-muted" style="line-height: 1.7; font-size: 1.05rem;">Professionally
+                                    Calibrated Thylanium Plywood cuts cleaner, holds screws stronger, and reduces
+                                    wastage — making it a
                                     favorite among professionals.</p>
                             </div>
                         </div>
@@ -885,7 +902,8 @@
                                 style="letter-spacing: 5px; font-size: 0.8rem;">PARTNER WITH US</span>
                         </div>
                         <h1 class="display-3 text-white fw-bold mb-4" style="line-height: 1.1;">DEALERS
-                            <br>ARCHITECTS<br><span style="color: var(--primary);">CONTRACTORS</span></h1>
+                            <br>ARCHITECTS<br><span style="color: var(--primary);">CONTRACTORS</span>
+                        </h1>
                         <p class="text-white-50 fs-5 pe-lg-5 mb-0" style="max-width: 500px; line-height: 1.8;">Partner
                             with Thylanium for consistent supply, dependable quality, and competitive pricing built for
                             your business.</p>
@@ -942,8 +960,8 @@
                                             class="form-select bg-transparent text-white-50 border-0 border-bottom border-secondary rounded-0 px-0 focus-primary"
                                             style="height: 50px; transition: all 0.3s ease;" required>
                                             <option selected value="" class="bg-dark">Select Requirement</option>
-                                            <option class="bg-dark">Marine Grade Plywood</option>
-                                            <option class="bg-dark">MR Grade Plywood</option>
+                                            <option class="bg-dark">Thylanium Marine Hawk</option>
+                                            <option class="bg-dark">Thylanium SHILAK MR</option>
                                             <option class="bg-dark">Bulk Architectural Supply</option>
                                         </select>
                                     </div>
@@ -1089,17 +1107,20 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-light mb-4">Products</h4>
-                    <a class="btn btn-link" href="MRGradePlywood.html">MR Grade Plywood</a>
-                    <a class="btn btn-link" href="ThylaniumMarineGradePlywood.html">Marine Grade Plywood</a>
+                    <a class="btn btn-link" href="MRGradePlywood.html">Thylanium SHILAK MR</a>
+                    <a class="btn btn-link" href="ThylaniumMarineGradePlywood.html">Thylanium Marine Hawk</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-light mb-4">Quick Links</h4>
                     <a class="btn btn-link" href="about.html">About Us</a>
-                    <a class="btn btn-link" href="contact.html">Contact Us</a>
+                    <a class="btn btn-link" href="PURPOSE.html">Purpose</a>
                     <a class="btn btn-link" href="service.html">Our Products</a>
+                    <a class="btn btn-link" href="contact.html">Contact Us</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">THYLANIUM</h4><p>Delivering uncompromising strength and architectural precision for over 25 years. Layered with Legacy.</p>
+                    <h4 class="text-light mb-4">THYLANIUM</h4>
+                    <p>Delivering uncompromising strength and architectural precision for over 25 years. Layered with
+                        Legacy.</p>
                 </div>
             </div>
         </div>
@@ -1173,4 +1194,3 @@
 </body>
 
 </html>
-
